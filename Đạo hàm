@@ -14,6 +14,8 @@
 % Chọn sai số:
 % Sai số O(h) hoặc O(h^2)
 
+% Nhập giá trị cần tính đạo hàm
+% x = 0.7
 
 %Chuyển từ chuổi x,y sang hàm số y = f(x)
 
@@ -61,3 +63,13 @@
 
     %%Trường hợp sai số O(h^2)
     %fdh_XapXiTrungTam = (y(x+h)-y(x-h))/(2*h) - (h^2)*fd3(x)/6;
+
+%Hiển thị kết quả
+    fdh_XapXiTien = str2func(['@(x)' char(fdh_XapXiTien)]);
+    fdh_XapXiTien(x)
+
+    fdh_XapXiLui = str2func(['@(x)' char(fdh_XapXiLui)]);
+    fdh_XapXiLui(x)
+
+    fdh_XapXiTrungTam = str2func(['@(x)' char(fdh_XapXiTrungTam)]);
+    fdh_XapXiTrungTam(x)
