@@ -17,7 +17,6 @@
 
 %Chuyển từ chuổi x,y sang hàm số y = f(x)
 
-    % function [y] = symsLagrange(xa, ya)
     syms x;
     n = length(xa);
     P = 0;
@@ -31,7 +30,6 @@
             P = P + ya(i)*L;
         end
         y = str2func(['@(x)' char(P)]);
-    % end
 
 
 % Tính đạo hàm bậc 2, 3
